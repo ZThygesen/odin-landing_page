@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header section */
+/* ------------------------------------------------ */
+
+.header {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    padding: 50px 150px;
+    gap: 90px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ff3b3f;
+    text-align: center;
+}
+
+.subtext {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6e6e6e;
+    text-align: center;
+}
+
+.title .home {
+    background-color: #05386b;
+    border: none;
+    color: #edf5e1;
+    max-width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 12px;
+}
+
+.title .home:hover {
+    background-color: #ff3b3f;
+    transition: all 0.2s;
+}
+
+.header .left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+    width: auto;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+/* Description section */
+/* ------------------------------------------------ */
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.description .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    padding: 50px;
+}
+
+.description h2 {
+    color: #05386b;
+    margin: 0;
+}
+
+.description p {
+    color: #6e6e6e;
+    background-color: #caebf2;
+    font-weight: 600;
+}
+
+/* Recipe section - Ingredients and Steps*/
+/* ------------------------------------------------ */
+
+.recipe {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.recipe .container {
+    display: flex;
+    max-width: 1400px;
+    padding: 50px;
+}
+
+.ingredients, .steps {
+    font-weight: 600;
+}
+
+.ingredients h2 {
+    color: #ff3b3f;
+    margin: 0;
+}
+
+.steps h2 {
+    color: #05386b;
+    margin: 0;
+}
+
+.ingredients li, .steps li {
+    color: #6e6e6e;
+}
+
+.ingredients {
+    border-right: 1px solid #6e6e6e;
+    padding-right: 36px;
+    flex: 1;
+}
+
+.steps {
+    padding-left: 36px;
+    flex: 3;
+}
+
+.steps ol {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Footer section */
+/* ------------------------------------------------ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb;
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
