@@ -2,22 +2,50 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    min-height: 100vh;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Nav/Hero section */
 /* ------------------------------------------ */
 
 .header {
     background-color: #1f2937;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    padding: 10px 150px 80px;
+    gap: 90px;
+}
+
+/* Nav bar */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
-    font-weight: 900;
+    font-weight: 800;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -26,38 +54,25 @@ a {
     color: #e5e7eb;
 }
 
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 16px;
+a:hover {
+    color: #3882f6;
+    border-radius: 3px;
+    transition: all 0.2s;
 }
 
-/* ------------------------------------------ */
 
-.content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.description, .information, .quote, .action {
-    border: 1px solid;
-    flex: 1;
-}
-
-/* ------------------------------------------ */
-
+/* Hero section */
 .description {
     display: flex;
-    background-color: #1f2937;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    
+    gap: 50px;
 }
 
 .main-text {
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 800;
     color: #f9faf8;
 }
 
@@ -68,27 +83,159 @@ ul {
 
 .description .sign-up {
     background-color: #3882f6;
+    border: none;
     color: #f9faf8;
     max-width: 100px;
-    border-radius: 12px;
-    padding: 10px 24px;
+    border-radius: 6px;
+    padding: 5px 24px;
 }
 
-.left .right {
-    max-width: 200px;
-}
-
-.left {
+.header .left {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+}
+
+.header .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 100px 0;
 }
 
 .image {
-    background-color: grey;
-    padding: 100px;
+    text-align: center;
+    flex: 1;
+    color: #f9faf8;
 }
 
+/* Information/Images section */
+/* ------------------------------------------ */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.information .container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.box {
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.illustration {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+}
+
+/* Quote section */
+/* ------------------------------------------ */
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    gap: 10px;
+    padding: 80px 200px;
+
+}
+
+.quote .text {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.author {
+    align-self: flex-end;
+    margin-right: 70px;
+}
+
+/* Call to action section */
+/* ------------------------------------------ */
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action .container {
+    background-color: #3882f6;
+    border-radius: 3px;
+    width: 60%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px; 
+    margin: 60px 0; 
+    gap: 10px;
+    max-width: 700px;
+}
+
+.action .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.action-call {
+   font-size: 18px;
+   color: #f9faf8;
+   font-weight: 900;
+}
+
+.action .subtext {
+    font-size: 12px;
+    color: #f9faf8;
+}
+
+.action .sign-up {
+    border: 2px solid #f9faf8;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 6px;
+    max-width: 100px;
+    padding: 5px 24px;
+}
+
+/* Footer */
 /* ------------------------------------------ */
 
 .footer {
